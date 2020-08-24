@@ -1,0 +1,25 @@
+{
+    "name": "MIPS",
+    "displayName": "MIPS",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "MIPS",
+            "aliases": ["MIPS", "MIPS"],
+            "extensions": [".asm",".s",".a"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "MIPS",
+            "scopeName": "source.mips",
+            "path": "./syntaxes/MIPS.tmLanguage.json"
+        }]
+    }
+}

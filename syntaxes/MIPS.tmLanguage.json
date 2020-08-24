@@ -1,0 +1,74 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MIPS",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.arithmetic_and_logical.MIPS",
+					"match": "\\b(add|addu|for|return)\\b"
+				},
+				{
+					"name": "keyword.comstant_manipulating.MIPS",
+					"match": "\\b(lui|li)\\b"
+				},
+				{
+					"name": "keyword.comparison.MIPS",
+					"match": "\\b(slt|sltu)\\b"
+				},
+				{
+					"name": "keyword.branch.MIPS",
+					"match": "\\b(b|bclf)\\b"
+				},
+				{
+					"name": "keyword.jump.MIPS",
+					"match": "\\b(j|jal)\\b"
+				},
+				{
+					"name": "keyword.trap.MIPS",
+					"match": "\\b(teq|teq)\\b"
+				},
+				{
+					"name": "keyword.load.MIPS",
+					"match": "\\b(la|lb)\\b"
+				},
+				{
+					"name": "keyword.store.MIPS",
+					"match": "\\b(sb|sh)\\b"
+				},
+				{
+					"name": "keyword.data_movement.MIPS",
+					"match": "\\b(move|mfhi)\\b"
+				},
+				{
+					"name": "keyword.floating_point.MIPS",
+					"match": "\\b(abs.d|abs.s)\\b"
+				},
+				{
+					"name": "keyword.exception_and_interrupt.MIPS",
+					"match": "\\b(eret|syscall)\\b"
+				}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.MIPS",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.MIPS",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.mips"
+}
