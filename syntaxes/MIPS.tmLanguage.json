@@ -50,7 +50,7 @@
 				},
 				{
 					"name": "keyword.floating_point.MIPS",
-					"match": "\\b(abs.d|abs.s|)\\b"
+					"match": "\\b(abs.d|abs.s)\\b"
 				},
 				{
 					"name": "keyword.exception_and_interrupt.MIPS",
