@@ -14,7 +14,7 @@
 			"patterns": [
 				{
 					"name": "keyword.arithmetic_and_logical.MIPS",
-					"match": "\\b(add|addu|for|return)\\b"
+					"match": "\\b(abs|add|addu|addi|addiu|and|andi|clo|clz|div|divu|mult|multu|mul|mulo|mulou|madd|maddu|msub|neg|negu|nor|not|or|ori|rem|remu|sll|sllv|sra|srav|srl|srlv|rol|ror|sub|subu|xor|xori)\\b"
 				},
 				{
 					"name": "keyword.comstant_manipulating.MIPS",
@@ -22,39 +22,39 @@
 				},
 				{
 					"name": "keyword.comparison.MIPS",
-					"match": "\\b(slt|sltu)\\b"
+					"match": "\\b(slt|sltu|slti|sltiu|seq|sge|sgeu|sgt|sgtu|sle|sleu|sne)\\b"
 				},
 				{
 					"name": "keyword.branch.MIPS",
-					"match": "\\b(b|bclf)\\b"
+					"match": "\\b(b|bclf|bclt|beq|bgez|bgezal|bgtz|blez|bltzal|bltz|bne|beqz|bge|bgeu|bgt|bgtu|ble|bleu|blt|bltu|bnez)\\b"
 				},
 				{
 					"name": "keyword.jump.MIPS",
-					"match": "\\b(j|jal)\\b"
+					"match": "\\b(j|jal|jalr|jr)\\b"
 				},
 				{
 					"name": "keyword.trap.MIPS",
-					"match": "\\b(teq|teq)\\b"
+					"match": "\\b(teq|teqi|tge|tgeu|tgei|tgeiu|tlt|tltu|tlti|tltiu)\\b"
 				},
 				{
 					"name": "keyword.load.MIPS",
-					"match": "\\b(la|lb)\\b"
+					"match": "\\b(la|lb|lbu|lh|lhu|lw|lwcl|lwl|lwr|ld|ulh|ulhu|ulw|ll)\\b"
 				},
 				{
 					"name": "keyword.store.MIPS",
-					"match": "\\b(sb|sh)\\b"
+					"match": "\\b(sb|sh|sw|swcl|sdcl|swl|swr|sd|ush|usw|sc)\\b"
 				},
 				{
 					"name": "keyword.data_movement.MIPS",
-					"match": "\\b(move|mfhi)\\b"
+					"match": "\\b(move|mfhi|mflo|mthi|mtlo|mfc0|mfc1|mdc1.d|mtc0|mtc1|movn|movz|movf|movt)\\b"
 				},
 				{
 					"name": "keyword.floating_point.MIPS",
-					"match": "\\b(abs.d|abs.s)\\b"
+					"match": "\\b(abs.d|abs.s|)\\b"
 				},
 				{
 					"name": "keyword.exception_and_interrupt.MIPS",
-					"match": "\\b(eret|syscall)\\b"
+					"match": "\\b(eret|syscall|break code|nop)\\b"
 				}
 		]
 		},
