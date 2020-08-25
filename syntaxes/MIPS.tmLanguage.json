@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#register"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.arithmetic_and_logical.MIPS",
+					"name": "keyword.operator.arithmetic_and_logical.MIPS",
 					"match": "\\b(abs|add|addu|addi|addiu|and|andi|clo|clz|div|divu|mult|multu|mul|mulo|mulou|madd|maddu|msub|neg|negu|nor|not|or|ori|rem|remu|sll|sllv|sra|srav|srl|srlv|rol|ror|sub|subu|xor|xori)\\b"
 				},
 				{
@@ -25,7 +28,7 @@
 					"match": "\\b(slt|sltu|slti|sltiu|seq|sge|sgeu|sgt|sgtu|sle|sleu|sne)\\b"
 				},
 				{
-					"name": "keyword.branch.MIPS",
+					"name": "keyword.control.branch.MIPS",
 					"match": "\\b(b|bclf|bclt|beq|bgez|bgezal|bgtz|blez|bltzal|bltz|bne|beqz|bge|bgeu|bgt|bgtu|ble|bleu|blt|bltu|bnez)\\b"
 				},
 				{
@@ -67,6 +70,12 @@
 					"name": "constant.character.escape.MIPS",
 					"match": "\\\\."
 				}
+			]
+		},
+		"register": {
+			"name": "register.MIPS",
+			"patterns": [
+
 			]
 		}
 	},
