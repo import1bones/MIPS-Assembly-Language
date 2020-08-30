@@ -1,0 +1,237 @@
+{
+    "abs": 
+    {
+        "prefix": "abs",
+        "body": 
+        [
+            "\tabs\t\\$$1, \\$$2"
+        ],
+        "description": "abs    rdest, rsrc\nrdest = abs(rsrc)"
+    },
+    "add":
+    {
+        "prefix": "add",
+        "body":
+        [
+            "\tadd\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "add    rd, rs, rt\nrd = rs + rt"
+    },
+    "addu":
+    {
+        "prefix": "addu",
+        "body":
+        [
+            "\taddu\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description":"addu    rd, rs, rt\nrd = rs + rt"
+    },
+    "addi":
+    {
+        "prefix": "addi",
+        "body":
+        [
+            "\taddi\t\\$$1, \\$$2, $3"
+        ],
+        "description":"addi    rd, rs, imm\nrd = rs + Sign-Extended-Immeditate"
+    },
+    "addiu":
+    {
+        "prefix": "addiu",
+        "body":
+        [
+            "\taddiu\t\\$$1, \\$$2, $3"
+        ],
+        "description":"addiu    rd, rs, imm\nrd = rs + Sign-Extended-Immeditate"
+    },
+    "and":
+    {
+        "prefix": "and",
+        "body":
+        [
+            "\tand\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description":"and    rd, rs, rt\nrd = rs & rt"
+    },
+    "andi":
+    {
+        "prefix": "andi",
+        "body": 
+        [
+            "\tandi\t\\$$1, \\$$2, $3"
+        ],
+        "description":"andi    rd, rs, rt\nrd = rs & Zero-Extended-Immeditate"
+    },
+    "clo":
+    {
+        "prefix": "clo",
+        "body":
+        [
+            "\tclo\t\\$$1, \\$$2"
+        ],
+        "description": "clo\trd, rs\nCount the number of leading ones in the word in the register rs and put the result into register rd"
+    },
+    "clz":
+    {
+        "prefix": "clz",
+        "body":
+        [
+            "\tclz\t\\$$1, \\$$2"
+        ],
+        "description": "clz\trd, rs\nCount the number of leading zeros in the word in the register rs and put the result into register rd"
+    },
+    "div":
+    {
+        "prefix": "div",
+        "body": 
+        [
+            "\tdiv\t\\$$1, \\$$2"
+        ],
+        "description": "div\trs, rt\nDivide register rs by register rt,Leave the quotient in register lo and the remainder in register hi"
+            
+    },
+    "div-pseudo":
+    {
+        "prefix": "div",
+        "body": 
+        [
+            "\tdiv\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "div\trdest, rsrc1, src2\nPut the quotient of the register rsrc1 and src2 into register rdest"
+    },
+    "divu":
+    {
+        "prefix": "divu",
+        "body": 
+        [
+            "\tdivu\t\\$$1, \\$$2"
+        ],
+        "description": "divu\trs, rt\nDivide register rs by register rt,Leave the quotient in register lo and the remainder in register hi"
+    },
+    "divu-pseudo":
+    {
+        "prefix": "divu",
+        "body": 
+        [
+            "\tdivu\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "divu\trdest, rsrc1, src2\nPut the quotient of the register rsrc1 and src2 into register rdest"
+    },
+    "mult":
+    {
+        "prefix": "mult",
+        "body": 
+        [
+            "\tmult\t\\$$1, \\$$2"
+        ],
+        "description": "mult\trs, rt\nMultiply rgeister rs and rt,Leave the low-order word of the product in register lo and the high-order word in register hi"
+    },
+    "multu":
+    {
+        "prefix": "multu",
+        "body": 
+        [
+            "\tmultu\t\\$$1, \\$$2"
+        ],
+        "description": "multu\trs, rt\nMultiply rgeister rs and rt,Leave the low-order word of the product in register lo and the high-order word in register hi"
+    },
+    "mul":
+    {
+        "prefix": "mul",
+        "body":
+        [
+            "\tmul\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "mul\trd, rs, rt\nPut the low-order 32 bits of the product of rs ans rt into register rd"
+    },
+    "mulo":
+    {
+        "prefix": "mulo",
+        "body":
+        [
+            "\tmulo\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "mulo\trdest,rsrc1,src1\nPut the low-order 32 bits of the product of rsrc1 ans src2 into register rdest"
+    },
+    "mulou":
+    {
+        "prefix": "mulou",
+        "body":
+        [
+            "\tmulou\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "mulou\trdest, rsrc1, src2\nPut the low-order 32 bits of the product of rsrc1 ans src2 into register rdest"
+    },
+    "madd":
+    {
+        "prefix": "madd",
+        "body":
+        [
+            "\tmadd\t\\$$1, \\$$2"
+        ],
+        "description": "madd\trs, rt\nMultiply register rs and rt and add the resulting 64-bit product to the 64-bit value in the concatenated registers lo and hi"
+    },
+    "maddu":
+    {
+        "prefix": "maddu",
+        "body":
+        [
+            "\tmaddu\t\\$$1, \\$$2"
+        ],
+        "description": "madd\trs, rt\nMultiply register rs and rt and add the resulting 64-bit product to the 64-bit value in the concatenated registers lo and hi"
+    },
+    "msub":
+    {
+        "prefix": "msub",
+        "body": 
+        [
+            "\tmsub\t\\$$1, \\$$2"
+        ],
+        "description": "msub\trs, rt\nMultiply register rs and rt and subtract the resulting 64-bit product to the 64-bit value in the concatenated registers lo and hi"
+    },
+    "neg": 
+    {
+        "prefix": "neg",
+        "body":
+        [
+            "\tneg\t\\$$1, \\$$2"
+        ],
+        "description": "neg\trdest, rsrc\nPut the negative of rsrc into register rdest"
+    },
+    "negu":
+    {
+        "prefix": "negu",
+        "body":
+        [
+            "\tnegu\t\\$$1, \\$$2"
+        ],
+        "description": "negu\trdest, rsrc\nPut the negative of rsrc into register rdest"
+    },
+    "nor":
+    {
+        "prefix": "nor",
+        "body": 
+        [
+            "\tnor\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "nor\trd, rs, rt\nPut the logical NOR of registers rs and rt into register rd"
+    },
+    "not":
+    {
+        "prefix": "not",
+        "body":
+        [
+            "\tnot\t\\$$1, \\$$2"
+        ],
+        "description": "not\trdest, rsrc\nPut the bitwise logical negation of register rsrc into register rdest"
+    },
+    "or":
+    {
+        "prefix": "or",
+        "body":
+        [
+            "\tor\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "or\trd, rs, rt\nPut the logical OR of register rs and rt into register rd"
+    }
+}

@@ -7,7 +7,8 @@
         "vscode": "^1.48.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -20,6 +21,12 @@
             "language": "MIPS",
             "scopeName": "source.mips",
             "path": "./syntaxes/MIPS.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "MIPS",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     }
 }

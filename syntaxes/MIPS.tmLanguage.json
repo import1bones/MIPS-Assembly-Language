@@ -10,6 +10,9 @@
 		},
 		{
 			"include": "#register"
+		},
+		{
+			"include": "comment"
 		}
 	],
 	"repository": {
@@ -53,7 +56,7 @@
 				},
 				{
 					"name": "keyword.floating_point.MIPS",
-					"match": "\\b(abs.d|abs.s)\\b"
+					"match": "\\b(abs\\.d|abs\\.s)\\b"
 				},
 				{
 					"name": "keyword.exception_and_interrupt.MIPS",
@@ -75,8 +78,15 @@
 		"register": {
 			"name": "register.MIPS",
 			"patterns": [
-
+				{
+					"name": ""
+				}
 			]
+		},
+		"comment": {
+			"name": "punctuation.comment.line.number-sign.MIPS",
+			"begin": "\\#",
+			"end": "\\n"
 		}
 	},
 	"scopeName": "source.mips"
