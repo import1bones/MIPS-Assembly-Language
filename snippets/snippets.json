@@ -233,5 +233,216 @@
             "\tor\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "or\trd, rs, rt\nPut the logical OR of register rs and rt into register rd"
+    },
+    "ori":
+    {
+        "prefix": "ori",
+        "body":
+        [
+            "\tori\t\\$$1, \\$$2, \\$$3"
+        ],
+        "description": "ori\trt, rs, imm\nPut the logical OR of register rs and the zero-extended immediate into register rt"
+    },
+    "rem":
+    {
+        "prefix": "rem",
+        "body":
+        [
+            "\trem\t\\$$1,\\$$2,\\$3"
+        ],
+        "descripition": "rem\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
+    },
+    "remu":
+    {
+        "prefix": "remu",
+        "body":
+        [
+            "\tremu\t\\$$1,\\$$2,\\$3"
+        ],
+        "descripition": "remu\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
+    },
+    "sll":
+    {
+        "prefix": "sll",
+        "body":
+        [
+            "\tsll\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "sll\trd, rt, shamt\nShift register rt left by the distance indicate by immediate shamt and put the result in register rd"
+    },
+    "sllv":
+    {
+        "prefix": "sllv",
+        "body": 
+        [
+            "\tsllv\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descriptiion": "sllv\trd, rt, rs\nShift register rt left by the distance indicate by register rs and put the result in register rd"
+    },
+    "comment: some arithmetic and logical instruction have not snippet":
+    {
+
+    },
+    "lui":
+    {
+        "prefix": "lui",
+        "body":
+        [
+            "\tlui\t\\$$1, $2"
+        ],
+        "descripition":"lui\trt,imm\nLoad the lower halfword of the immediate imm into the upper halfword of register rt"
+    },
+    "li":
+    {
+        "prefix": "li",
+        "body":
+        [
+            "\tli\t\\$$1, $2"
+        ],
+        "descripition":"li\trdest, imm\nMove the immediate into register rdest"
+    },
+    "slt":
+    {
+        "prefix": "slt",
+        "body": 
+        [
+            "\tslt\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition":"slt\trd, rs, rt\nSet register rd to 1 if regsiter rs is less than rt, and to 0 otherwise"
+    },
+    "sltu":
+    {
+        "prefix": "sltu",
+        "body":
+        [
+            "\tsltu\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sltu\trd, rs, rt\nSet register rd to 1 if register rs is less than rt"
+    },
+    "slti":
+    {
+        "prefix": "slti",
+        "body":
+        [
+            "\tslti\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "slti\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
+    },
+    "sltiu":
+    {
+        "prefix": "sltiu",
+        "body":
+        [
+            "\tsltiu\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "sltiu\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
+    },
+    "seq":
+    {
+        "prefix": "seq",
+        "body" :
+        [
+            "\tseq\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "seq\trdest, rsrc1, rsrc2\nSet register rdest to 1 if register rsrc1 equals rsrc2,and to 0 otherwise"
+    },           
+    "sge":
+    {
+        "prefix": "sge",
+        "body":
+        [
+            "\tsge\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sge\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
+    },
+    "sgeu":
+    {
+        "prefix": "sgeu",
+        "body":
+        [
+            "\tsgeu\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sgeu\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
+    },
+    "sgt":
+    {
+        "prefix": "sgt",
+        "body":
+        [
+            "\tsgt\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sgt\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
+    },
+    "sgtu":
+    {
+        "prefix": "sgtu",
+        "body":
+        [
+            "\tsgtu\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sgtu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
+    },
+    "sle":
+    {
+        "prefix": "sle",
+        "body":
+        [
+            "\tsle\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sle\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
+    },
+    "sleu":
+    {
+        "prefix": "sleu",
+        "body":
+        [
+            "\tsleu\t\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sleu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
+    },
+    "sne":
+    {
+        "prefix": "sne",
+        "body":
+        [
+            "\tsne\\$$1, \\$$2, \\$$3"
+        ],
+        "descripition": "sne\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is not equal to rsrc2,and to 0 otherwise"
+    },
+    "b":
+    {
+        "prefix": "b",
+        "body":
+        [
+            "\tb\t$1"
+        ],
+        "descripition": "b\tlabel\nUnconditionally branch to the instruction at the label"
+    },
+    "bclf":
+    {
+        "prefix": "bclf",
+        "body":
+        [
+            "\tbclf\tcc, $1"
+        ],
+        "descripition": "bclf\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is false"
+    },
+    "bclt":
+    {
+        "prefix": "bclt",
+        "body":
+        [
+            "\tbclt\tcc, $1"
+        ],
+        "descripition": "bclt\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is true"
+    },
+    "beq":
+    {
+        "prefix": "beq",
+        "body":
+        [
+            "\tbeq\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "beq\trs, rt ,label\nConditionally branch the number of instructions specified by the offset if register rs equals rt"
     }
 }
