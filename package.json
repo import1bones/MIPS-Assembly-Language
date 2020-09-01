@@ -1,6 +1,7 @@
 {
     "name": "mips",
     "displayName": "MIPS Assembly Language",
+    "publisher": "mute",
     "description": "This preview release of the MIPS extension adds language support for MIPS to Visual Studio Code, including features such as highlight and snippets.",
     "version": "0.0.1",
     "engines": {

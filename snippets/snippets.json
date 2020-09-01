@@ -250,7 +250,7 @@
         [
             "\trem\t\\$$1,\\$$2,\\$3"
         ],
-        "descripition": "rem\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
+        "description": "rem\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
     },
     "remu":
     {
@@ -259,7 +259,7 @@
         [
             "\tremu\t\\$$1,\\$$2,\\$3"
         ],
-        "descripition": "remu\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
+        "description": "remu\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
     },
     "sll":
     {
@@ -268,7 +268,7 @@
         [
             "\tsll\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "sll\trd, rt, shamt\nShift register rt left by the distance indicate by immediate shamt and put the result in register rd"
+        "description": "sll\trd, rt, shamt\nShift register rt left by the distance indicate by immediate shamt and put the result in register rd"
     },
     "sllv":
     {
@@ -290,7 +290,7 @@
         [
             "\tlui\t\\$$1, $2"
         ],
-        "descripition":"lui\trt,imm\nLoad the lower halfword of the immediate imm into the upper halfword of register rt"
+        "description":"lui\trt,imm\nLoad the lower halfword of the immediate imm into the upper halfword of register rt"
     },
     "li":
     {
@@ -299,7 +299,7 @@
         [
             "\tli\t\\$$1, $2"
         ],
-        "descripition":"li\trdest, imm\nMove the immediate into register rdest"
+        "description":"li\trdest, imm\nMove the immediate into register rdest"
     },
     "slt":
     {
@@ -308,7 +308,7 @@
         [
             "\tslt\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition":"slt\trd, rs, rt\nSet register rd to 1 if regsiter rs is less than rt, and to 0 otherwise"
+        "description":"slt\trd, rs, rt\nSet register rd to 1 if regsiter rs is less than rt, and to 0 otherwise"
     },
     "sltu":
     {
@@ -317,7 +317,7 @@
         [
             "\tsltu\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sltu\trd, rs, rt\nSet register rd to 1 if register rs is less than rt"
+        "description": "sltu\trd, rs, rt\nSet register rd to 1 if register rs is less than rt"
     },
     "slti":
     {
@@ -326,7 +326,7 @@
         [
             "\tslti\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "slti\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
+        "description": "slti\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
     },
     "sltiu":
     {
@@ -335,7 +335,7 @@
         [
             "\tsltiu\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "sltiu\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
+        "description": "sltiu\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
     },
     "seq":
     {
@@ -344,7 +344,7 @@
         [
             "\tseq\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "seq\trdest, rsrc1, rsrc2\nSet register rdest to 1 if register rsrc1 equals rsrc2,and to 0 otherwise"
+        "description": "seq\trdest, rsrc1, rsrc2\nSet register rdest to 1 if register rsrc1 equals rsrc2,and to 0 otherwise"
     },           
     "sge":
     {
@@ -353,7 +353,7 @@
         [
             "\tsge\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sge\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
+        "description": "sge\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
     },
     "sgeu":
     {
@@ -362,7 +362,7 @@
         [
             "\tsgeu\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sgeu\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
+        "description": "sgeu\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
     },
     "sgt":
     {
@@ -371,7 +371,7 @@
         [
             "\tsgt\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sgt\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
+        "description": "sgt\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
     },
     "sgtu":
     {
@@ -380,7 +380,7 @@
         [
             "\tsgtu\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sgtu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
+        "description": "sgtu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
     },
     "sle":
     {
@@ -389,7 +389,7 @@
         [
             "\tsle\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sle\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
+        "description": "sle\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
     },
     "sleu":
     {
@@ -398,7 +398,7 @@
         [
             "\tsleu\t\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sleu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
+        "description": "sleu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
     },
     "sne":
     {
@@ -407,7 +407,7 @@
         [
             "\tsne\\$$1, \\$$2, \\$$3"
         ],
-        "descripition": "sne\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is not equal to rsrc2,and to 0 otherwise"
+        "description": "sne\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is not equal to rsrc2,and to 0 otherwise"
     },
     "b":
     {
@@ -416,7 +416,7 @@
         [
             "\tb\t$1"
         ],
-        "descripition": "b\tlabel\nUnconditionally branch to the instruction at the label"
+        "description": "b\tlabel\nUnconditionally branch to the instruction at the label"
     },
     "bclf":
     {
@@ -425,7 +425,7 @@
         [
             "\tbclf\tcc, $1"
         ],
-        "descripition": "bclf\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is false"
+        "description": "bclf\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is false"
     },
     "bclt":
     {
@@ -434,7 +434,7 @@
         [
             "\tbclt\tcc, $1"
         ],
-        "descripition": "bclt\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is true"
+        "description": "bclt\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is true"
     },
     "beq":
     {
@@ -443,7 +443,7 @@
         [
             "\tbeq\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "beq\trs, rt ,label\nConditionally branch the number of instructions specified by the offset if register rs equals rt"
+        "description": "beq\trs, rt ,label\nConditionally branch the number of instructions specified by the offset if register rs equals rt"
     },
     "bgez":
     {
@@ -452,7 +452,7 @@
         [
             "\tbgez\t\\$$1, $2"
         ],
-        "descripition":"bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0"
+        "description":"bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0"
     },
     "bgezal":
     {
@@ -461,7 +461,7 @@
         [
             "\tbgezal\t\\$$1, $2"
         ],
-        "descripition": "bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0, Save the address of the next instruction in register 31($ra)"
+        "description": "bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0, Save the address of the next instruction in register 31($ra)"
     },
     "bgtz":
     {
@@ -470,7 +470,7 @@
         [
             "\tbgtz\t\\$$1, $2"
         ],
-        "descripition": "bgtz\trs, label\nConditionally branch the number of instruction specified by the offset if register rs is greater than 0"
+        "description": "bgtz\trs, label\nConditionally branch the number of instruction specified by the offset if register rs is greater than 0"
     },
     "blez":
     {
@@ -479,7 +479,7 @@
         [
             "\tblez\t\\$$1, $2"
         ],
-        "descripition":"blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than or equals to 0"
+        "description":"blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than or equals to 0"
     },
     "bltzal":
     {
@@ -488,7 +488,7 @@
         [
             "\tbltzal\t\\$$1, $2"
         ],
-        "descripition": "blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0, Save the address of the next instruction in register 31($ra)"
+        "description": "blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0, Save the address of the next instruction in register 31($ra)"
     },
     "bltz":
     {
@@ -497,7 +497,7 @@
         [
             "\tbltz\t\\$$1, $2"
         ],
-        "descripition": "bltz\trs, label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0"
+        "description": "bltz\trs, label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0"
     },
     "bne":
     {
@@ -506,7 +506,7 @@
         [
             "\tbne\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "bne\trs, rt, label\nConditionally branch the number of instructions sprcified by the offset if register rs is not equal to rt"
+        "description": "bne\trs, rt, label\nConditionally branch the number of instructions sprcified by the offset if register rs is not equal to rt"
     },
     "beqz":
     {
@@ -515,7 +515,7 @@
         [
             "\tbeqz\t\\$$1, $2"
         ],
-        "descripition": "beqz\trsrc, label\nConditionally branch to the instruction at the label if rsrc equals 0"
+        "description": "beqz\trsrc, label\nConditionally branch to the instruction at the label if rsrc equals 0"
     },
     "bge":
     {
@@ -524,7 +524,7 @@
         [
             "\tbge\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "bge\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
+        "description": "bge\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
     },
     "bgeu":
     {
@@ -533,7 +533,7 @@
         [
             "\tbgeu\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "bgeu\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
+        "description": "bgeu\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
     },
     "bgt":
     {
@@ -542,7 +542,7 @@
         [
             "\tbgt\\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "bgt\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
+        "description": "bgt\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
     },
     "bgtu":
     {
@@ -551,7 +551,7 @@
         [
             "\tbgtu\\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "bgtu\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
+        "description": "bgtu\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
     },
     "ble":
     {
@@ -560,7 +560,7 @@
         [
             "\tble\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "ble\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
+        "description": "ble\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
     },
     "bleu":
     {
@@ -569,7 +569,7 @@
         [
             "\tbleu\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "bleu\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
+        "description": "bleu\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
     },
     "blt":
     {
@@ -578,7 +578,7 @@
         [
             "\tblt\t\\$$1, \\$$2, $3"
         ],
-        "descripition": "ble\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
+        "description": "ble\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
     },
     "bltu":
     {
@@ -595,7 +595,7 @@
         [
             "\tbnez\trsrc, label"
         ],
-        "descripition": "Conditionally branch to the instruction at the label if register rsrc is not equal to 0"
+        "description": "Conditionally branch to the instruction at the label if register rsrc is not equal to 0"
     },
     "j":
     {
@@ -604,7 +604,7 @@
         [
             "\tj\t$1"
         ],
-        "descripition": "j\ttarget\nUncondition jump to the instruction at target"
+        "description": "j\ttarget\nUncondition jump to the instruction at target"
     },
     "jal":
     {
@@ -613,7 +613,7 @@
         [
             "\tjal\t$1"
         ],
-        "descripition": "jal\ttarget\nUnconditionallt jump to the instruction at target,Save the address of next instruction in the register 31($ra)"
+        "description": "jal\ttarget\nUnconditionallt jump to the instruction at target,Save the address of next instruction in the register 31($ra)"
     },
     "jalr":
     {
@@ -622,7 +622,7 @@
         [
             "\tjalr\t\\$$1, \\$$2"
         ],
-        "descripition": "jalr\trs, rd\nUnconditionally jump to the instruction whose address is in register rs,Save the address of next instruction in register rd"
+        "description": "jalr\trs, rd\nUnconditionally jump to the instruction whose address is in register rs,Save the address of next instruction in register rd"
     },
     "jr":
     {
@@ -631,7 +631,7 @@
         [
             "\tjr\t\\$$1"
         ],
-        "descripition": "jr\trs\nUnconditionally jump to the instruction whose address is in register rs"
+        "description": "jr\trs\nUnconditionally jump to the instruction whose address is in register rs"
     },
     "comment: trap,load,store,movement,floating-point instruction have not snippet":
     {
@@ -644,7 +644,7 @@
         [
             "eret"
         ],
-        "descripition": "Set the EXL bit in coprocess 0's Status register to 0 and return the instruction pointed to by coprocess o's EPC register"
+        "description": "Set the EXL bit in coprocess 0's Status register to 0 and return the instruction pointed to by coprocess o's EPC register"
     },
     "syscall":
     {
@@ -653,7 +653,7 @@
         [
             "\tsyscall"
         ],
-        "descripition": "syscall\nLoad syscall call code to regsiter 2($v0) and ararguments to register 4-7($a0-$a3),to use operating system-like services"
+        "description": "syscall\nLoad syscall call code to regsiter 2($v0) and ararguments to register 4-7($a0-$a3),to use operating system-like services"
     },
     "break":
     {
@@ -662,7 +662,7 @@
         [
             "\tbreak\t$1"
         ],
-        "descripition": "break\tcode\nCause exception code."
+        "description": "break\tcode\nCause exception code."
     },
     "nop":
     {
@@ -671,6 +671,6 @@
         [
             "\tnop"
         ],
-        "descripition": "Do nothing"
+        "description": "Do nothing"
     }
 }
