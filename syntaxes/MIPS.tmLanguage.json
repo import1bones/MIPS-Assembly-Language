@@ -63,7 +63,7 @@
 				},
 				{
 					"name": "keyword.exception_and_interrupt.MIPS",
-					"match": "\\b(eret|syscall|break code|nop)\\b"
+					"match": "\\b(eret|syscall|break|nop)\\b"
 				}
 			]
 		},

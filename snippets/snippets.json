@@ -444,5 +444,233 @@
             "\tbeq\t\\$$1, \\$$2, $3"
         ],
         "descripition": "beq\trs, rt ,label\nConditionally branch the number of instructions specified by the offset if register rs equals rt"
+    },
+    "bgez":
+    {
+        "prefix": "bgez",
+        "body":
+        [
+            "\tbgez\t\\$$1, $2"
+        ],
+        "descripition":"bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0"
+    },
+    "bgezal":
+    {
+        "prefix": "bgezal",
+        "body":
+        [
+            "\tbgezal\t\\$$1, $2"
+        ],
+        "descripition": "bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0, Save the address of the next instruction in register 31($ra)"
+    },
+    "bgtz":
+    {
+        "prefix": "bgtz",
+        "body":
+        [
+            "\tbgtz\t\\$$1, $2"
+        ],
+        "descripition": "bgtz\trs, label\nConditionally branch the number of instruction specified by the offset if register rs is greater than 0"
+    },
+    "blez":
+    {
+        "prefix": "blez",
+        "body":
+        [
+            "\tblez\t\\$$1, $2"
+        ],
+        "descripition":"blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than or equals to 0"
+    },
+    "bltzal":
+    {
+        "prefix": "bltzal",
+        "body":
+        [
+            "\tbltzal\t\\$$1, $2"
+        ],
+        "descripition": "blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0, Save the address of the next instruction in register 31($ra)"
+    },
+    "bltz":
+    {
+        "prefix": "bltz",
+        "body":
+        [
+            "\tbltz\t\\$$1, $2"
+        ],
+        "descripition": "bltz\trs, label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0"
+    },
+    "bne":
+    {
+        "prefix": "bne",
+        "body":
+        [
+            "\tbne\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "bne\trs, rt, label\nConditionally branch the number of instructions sprcified by the offset if register rs is not equal to rt"
+    },
+    "beqz":
+    {
+        "prefix": "beqz",
+        "body":
+        [
+            "\tbeqz\t\\$$1, $2"
+        ],
+        "descripition": "beqz\trsrc, label\nConditionally branch to the instruction at the label if rsrc equals 0"
+    },
+    "bge":
+    {
+        "prefix":"bge",
+        "body": 
+        [
+            "\tbge\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "bge\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
+    },
+    "bgeu":
+    {
+        "prefix":"bgeu",
+        "body": 
+        [
+            "\tbgeu\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "bgeu\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
+    },
+    "bgt":
+    {
+        "prefix":"bgt",
+        "body":
+        [
+            "\tbgt\\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "bgt\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
+    },
+    "bgtu":
+    {
+        "prefix": "bgtu",
+        "body":
+        [
+            "\tbgtu\\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "bgtu\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
+    },
+    "ble":
+    {
+        "prefix": "ble",
+        "body": 
+        [
+            "\tble\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "ble\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
+    },
+    "bleu":
+    {
+        "prefix": "bleu",
+        "body": 
+        [
+            "\tbleu\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "bleu\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
+    },
+    "blt":
+    {
+        "prefix": "blt",
+        "body": 
+        [
+            "\tblt\t\\$$1, \\$$2, $3"
+        ],
+        "descripition": "ble\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
+    },
+    "bltu":
+    {
+        "prefix": "bltu",
+        "body":
+        [
+            "\tbltu\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
+        ]
+    },
+    "bnez":
+    {
+        "prefix": "bnez",
+        "body": 
+        [
+            "\tbnez\trsrc, label"
+        ],
+        "descripition": "Conditionally branch to the instruction at the label if register rsrc is not equal to 0"
+    },
+    "j":
+    {
+        "prefix": "j",
+        "body": 
+        [
+            "\tj\t$1"
+        ],
+        "descripition": "j\ttarget\nUncondition jump to the instruction at target"
+    },
+    "jal":
+    {
+        "prefix": "jal",
+        "body":
+        [
+            "\tjal\t$1"
+        ],
+        "descripition": "jal\ttarget\nUnconditionallt jump to the instruction at target,Save the address of next instruction in the register 31($ra)"
+    },
+    "jalr":
+    {
+        "prefix":"jalr",
+        "body":
+        [
+            "\tjalr\t\\$$1, \\$$2"
+        ],
+        "descripition": "jalr\trs, rd\nUnconditionally jump to the instruction whose address is in register rs,Save the address of next instruction in register rd"
+    },
+    "jr":
+    {
+        "prefix": "jr",
+        "body": 
+        [
+            "\tjr\t\\$$1"
+        ],
+        "descripition": "jr\trs\nUnconditionally jump to the instruction whose address is in register rs"
+    },
+    "comment: trap,load,store,movement,floating-point instruction have not snippet":
+    {
+
+    },
+    "eret":
+    {
+        "prefix": "eret",
+        "body": 
+        [
+            "eret"
+        ],
+        "descripition": "Set the EXL bit in coprocess 0's Status register to 0 and return the instruction pointed to by coprocess o's EPC register"
+    },
+    "syscall":
+    {
+        "prefix": "syscall",
+        "body":
+        [
+            "\tsyscall"
+        ],
+        "descripition": "syscall\nLoad syscall call code to regsiter 2($v0) and ararguments to register 4-7($a0-$a3),to use operating system-like services"
+    },
+    "break":
+    {
+        "prefix": "break",
+        "body":
+        [
+            "\tbreak\t$1"
+        ],
+        "descripition": "break\tcode\nCause exception code."
+    },
+    "nop":
+    {
+        "prefix": "nop",
+        "body":
+        [
+            "\tnop"
+        ],
+        "descripition": "Do nothing"
     }
 }
