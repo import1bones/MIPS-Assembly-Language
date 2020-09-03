@@ -2,6 +2,6 @@
 
 All notable changes to the "MIPS" extension will be documented in this file.
 
-## [Unreleased]
+## [preview]
 
-- Initial release:have highlight and aprt snippet
+- preview 0.0.1 :have highlight and aprt snippet
