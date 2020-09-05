@@ -1,9 +1,15 @@
 {
     "name": "mips",
     "displayName": "MIPS Assembly Language",
+    "author": "mute",
+    "license": "MIT",
     "publisher": "mute",
     "description": "This preview release of the MIPS extension adds language support for MIPS to Visual Studio Code, including features such as highlight and snippets.",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/import1bones/MIPS-Assembly-Language"
+    },
     "engines": {
         "vscode": "^1.48.0"
     },
@@ -12,22 +18,36 @@
         "Snippets"
     ],
     "contributes": {
-        "languages": [{
-            "id": "MIPS",
-            "aliases": ["MIPS", "MIPS"],
-            "extensions": [".asm",".s",".a"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "MIPS",
-            "scopeName": "source.mips",
-            "path": "./syntaxes/MIPS.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "MIPS",
+                "aliases": [
+                    "MIPS",
+                    "MIPS"
+                ],
+                "extensions": [
+                    ".asm",
+                    ".s",
+                    ".a"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "MIPS",
+                "scopeName": "source.mips",
+                "path": "./syntaxes/MIPS.tmLanguage.json"
+            }
+        ],
         "snippets": [
             {
                 "language": "MIPS",
                 "path": "./snippets/snippets.json"
             }
         ]
+    },
+    "dependencies": {
+        "vscode-languageclient": "^6.1.3"
     }
 }
