@@ -4,70 +4,70 @@
         "prefix": "abs",
         "body": 
         [
-            "\tabs\t\\$$1, \\$$2"
+           "abs\t\\$$1, \\$$2"
         ],
-        "description": "abs    rdest, rsrc\nrdest = abs(rsrc)"
+        "description": "abs\trdest, rsrc\nrdest = abs(rsrc)"
     },
     "add":
     {
         "prefix": "add",
         "body":
         [
-            "\tadd\t\\$$1, \\$$2, \\$$3"
+            "add\t\\$$1, \\$$2, \\$$3"
         ],
-        "description": "add    rd, rs, rt\nrd = rs + rt"
+        "description": "add\trd, rs, rt\nrd = rs + rt"
     },
     "addu":
     {
         "prefix": "addu",
         "body":
         [
-            "\taddu\t\\$$1, \\$$2, \\$$3"
+            "addu\t\\$$1, \\$$2, \\$$3"
         ],
-        "description":"addu    rd, rs, rt\nrd = rs + rt"
+        "description":"addu\trd, rs, rt\nrd = rs + rt"
     },
     "addi":
     {
         "prefix": "addi",
         "body":
         [
-            "\taddi\t\\$$1, \\$$2, $3"
+            "addi\t\\$$1, \\$$2, $3"
         ],
-        "description":"addi    rd, rs, imm\nrd = rs + Sign-Extended-Immeditate"
+        "description":"addi\trd, rs, imm\nrd = rs + Sign-Extended-Immeditate"
     },
     "addiu":
     {
         "prefix": "addiu",
         "body":
         [
-            "\taddiu\t\\$$1, \\$$2, $3"
+            "addiu\t\\$$1, \\$$2, $3"
         ],
-        "description":"addiu    rd, rs, imm\nrd = rs + Sign-Extended-Immeditate"
+        "description":"addiu\trd, rs, imm\nrd = rs + Sign-Extended-Immeditate"
     },
     "and":
     {
         "prefix": "and",
         "body":
         [
-            "\tand\t\\$$1, \\$$2, \\$$3"
+            "and\t\\$$1, \\$$2, \\$$3"
         ],
-        "description":"and    rd, rs, rt\nrd = rs & rt"
+        "description":"and\trd, rs, rt\nrd = rs & rt"
     },
     "andi":
     {
         "prefix": "andi",
         "body": 
         [
-            "\tandi\t\\$$1, \\$$2, $3"
+            "andi\t\\$$1, \\$$2, $3"
         ],
-        "description":"andi    rd, rs, rt\nrd = rs & Zero-Extended-Immeditate"
+        "description":"andi\trd, rs, rt\nrd = rs & Zero-Extended-Immeditate"
     },
     "clo":
     {
         "prefix": "clo",
         "body":
         [
-            "\tclo\t\\$$1, \\$$2"
+            "clo\t\\$$1, \\$$2"
         ],
         "description": "clo\trd, rs\nCount the number of leading ones in the word in the register rs and put the result into register rd"
     },
@@ -76,7 +76,7 @@
         "prefix": "clz",
         "body":
         [
-            "\tclz\t\\$$1, \\$$2"
+            "clz\t\\$$1, \\$$2"
         ],
         "description": "clz\trd, rs\nCount the number of leading zeros in the word in the register rs and put the result into register rd"
     },
@@ -85,7 +85,7 @@
         "prefix": "div",
         "body": 
         [
-            "\tdiv\t\\$$1, \\$$2"
+            "div\t\\$$1, \\$$2"
         ],
         "description": "div\trs, rt\nDivide register rs by register rt,Leave the quotient in register lo and the remainder in register hi"
             
@@ -95,7 +95,7 @@
         "prefix": "div",
         "body": 
         [
-            "\tdiv\t\\$$1, \\$$2, \\$$3"
+            "div\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "div\trdest, rsrc1, src2\nPut the quotient of the register rsrc1 and src2 into register rdest"
     },
@@ -104,7 +104,7 @@
         "prefix": "divu",
         "body": 
         [
-            "\tdivu\t\\$$1, \\$$2"
+            "divu\t\\$$1, \\$$2"
         ],
         "description": "divu\trs, rt\nDivide register rs by register rt,Leave the quotient in register lo and the remainder in register hi"
     },
@@ -113,7 +113,7 @@
         "prefix": "divu",
         "body": 
         [
-            "\tdivu\t\\$$1, \\$$2, \\$$3"
+            "divu\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "divu\trdest, rsrc1, src2\nPut the quotient of the register rsrc1 and src2 into register rdest"
     },
@@ -122,7 +122,7 @@
         "prefix": "mult",
         "body": 
         [
-            "\tmult\t\\$$1, \\$$2"
+            "mult\t\\$$1, \\$$2"
         ],
         "description": "mult\trs, rt\nMultiply rgeister rs and rt,Leave the low-order word of the product in register lo and the high-order word in register hi"
     },
@@ -131,7 +131,7 @@
         "prefix": "multu",
         "body": 
         [
-            "\tmultu\t\\$$1, \\$$2"
+            "multu\t\\$$1, \\$$2"
         ],
         "description": "multu\trs, rt\nMultiply rgeister rs and rt,Leave the low-order word of the product in register lo and the high-order word in register hi"
     },
@@ -140,7 +140,7 @@
         "prefix": "mul",
         "body":
         [
-            "\tmul\t\\$$1, \\$$2, \\$$3"
+            "mul\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "mul\trd, rs, rt\nPut the low-order 32 bits of the product of rs ans rt into register rd"
     },
@@ -149,7 +149,7 @@
         "prefix": "mulo",
         "body":
         [
-            "\tmulo\t\\$$1, \\$$2, \\$$3"
+            "mulo\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "mulo\trdest,rsrc1,src1\nPut the low-order 32 bits of the product of rsrc1 ans src2 into register rdest"
     },
@@ -158,7 +158,7 @@
         "prefix": "mulou",
         "body":
         [
-            "\tmulou\t\\$$1, \\$$2, \\$$3"
+            "mulou\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "mulou\trdest, rsrc1, src2\nPut the low-order 32 bits of the product of rsrc1 ans src2 into register rdest"
     },
@@ -167,7 +167,7 @@
         "prefix": "madd",
         "body":
         [
-            "\tmadd\t\\$$1, \\$$2"
+            "madd\t\\$$1, \\$$2"
         ],
         "description": "madd\trs, rt\nMultiply register rs and rt and add the resulting 64-bit product to the 64-bit value in the concatenated registers lo and hi"
     },
@@ -176,7 +176,7 @@
         "prefix": "maddu",
         "body":
         [
-            "\tmaddu\t\\$$1, \\$$2"
+            "maddu\t\\$$1, \\$$2"
         ],
         "description": "madd\trs, rt\nMultiply register rs and rt and add the resulting 64-bit product to the 64-bit value in the concatenated registers lo and hi"
     },
@@ -185,7 +185,7 @@
         "prefix": "msub",
         "body": 
         [
-            "\tmsub\t\\$$1, \\$$2"
+            "msub\t\\$$1, \\$$2"
         ],
         "description": "msub\trs, rt\nMultiply register rs and rt and subtract the resulting 64-bit product to the 64-bit value in the concatenated registers lo and hi"
     },
@@ -194,7 +194,7 @@
         "prefix": "neg",
         "body":
         [
-            "\tneg\t\\$$1, \\$$2"
+            "neg\t\\$$1, \\$$2"
         ],
         "description": "neg\trdest, rsrc\nPut the negative of rsrc into register rdest"
     },
@@ -203,7 +203,7 @@
         "prefix": "negu",
         "body":
         [
-            "\tnegu\t\\$$1, \\$$2"
+            "negu\t\\$$1, \\$$2"
         ],
         "description": "negu\trdest, rsrc\nPut the negative of rsrc into register rdest"
     },
@@ -212,7 +212,7 @@
         "prefix": "nor",
         "body": 
         [
-            "\tnor\t\\$$1, \\$$2, \\$$3"
+            "nor\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "nor\trd, rs, rt\nPut the logical NOR of registers rs and rt into register rd"
     },
@@ -221,7 +221,7 @@
         "prefix": "not",
         "body":
         [
-            "\tnot\t\\$$1, \\$$2"
+            "not\t\\$$1, \\$$2"
         ],
         "description": "not\trdest, rsrc\nPut the bitwise logical negation of register rsrc into register rdest"
     },
@@ -230,7 +230,7 @@
         "prefix": "or",
         "body":
         [
-            "\tor\t\\$$1, \\$$2, \\$$3"
+            "or\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "or\trd, rs, rt\nPut the logical OR of register rs and rt into register rd"
     },
@@ -239,7 +239,7 @@
         "prefix": "ori",
         "body":
         [
-            "\tori\t\\$$1, \\$$2, \\$$3"
+            "ori\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "ori\trt, rs, imm\nPut the logical OR of register rs and the zero-extended immediate into register rt"
     },
@@ -248,7 +248,7 @@
         "prefix": "rem",
         "body":
         [
-            "\trem\t\\$$1,\\$$2,\\$3"
+            "rem\t\\$$1,\\$$2,\\$3"
         ],
         "description": "rem\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
     },
@@ -257,7 +257,7 @@
         "prefix": "remu",
         "body":
         [
-            "\tremu\t\\$$1,\\$$2,\\$3"
+            "remu\t\\$$1,\\$$2,\\$3"
         ],
         "description": "remu\trdest, rsrc1, rsrc2\nPut the reminder of register rsrc1 divided by register rsrc2 into register rdest"
     },
@@ -266,7 +266,7 @@
         "prefix": "sll",
         "body":
         [
-            "\tsll\t\\$$1, \\$$2, $3"
+            "sll\t\\$$1, \\$$2, $3"
         ],
         "description": "sll\trd, rt, shamt\nShift register rt left by the distance indicate by immediate shamt and put the result in register rd"
     },
@@ -275,9 +275,18 @@
         "prefix": "sllv",
         "body": 
         [
-            "\tsllv\t\\$$1, \\$$2, \\$$3"
+            "sllv\t\\$$1, \\$$2, \\$$3"
         ],
-        "descriptiion": "sllv\trd, rt, rs\nShift register rt left by the distance indicate by register rs and put the result in register rd"
+        "description": "sllv\trd, rt, rs\nShift register rt left by the distance indicate by register rs and put the result in register rd"
+    },
+    "sra":
+    {
+        "prefix": "sra",
+        "body":
+        [
+            "sra\t\\$$1, \\$$2, $3"
+        ],
+        "description": "sra\trd, rt, shamt\nShift register right by the dis"
     },
     "comment: some arithmetic and logical instruction have not snippet":
     {
@@ -288,7 +297,7 @@
         "prefix": "lui",
         "body":
         [
-            "\tlui\t\\$$1, $2"
+            "lui\t\\$$1, $2"
         ],
         "description":"lui\trt,imm\nLoad the lower halfword of the immediate imm into the upper halfword of register rt"
     },
@@ -297,7 +306,7 @@
         "prefix": "li",
         "body":
         [
-            "\tli\t\\$$1, $2"
+            "li\t\\$$1, $2"
         ],
         "description":"li\trdest, imm\nMove the immediate into register rdest"
     },
@@ -306,7 +315,7 @@
         "prefix": "slt",
         "body": 
         [
-            "\tslt\t\\$$1, \\$$2, \\$$3"
+            "slt\t\\$$1, \\$$2, \\$$3"
         ],
         "description":"slt\trd, rs, rt\nSet register rd to 1 if regsiter rs is less than rt, and to 0 otherwise"
     },
@@ -315,7 +324,7 @@
         "prefix": "sltu",
         "body":
         [
-            "\tsltu\t\\$$1, \\$$2, \\$$3"
+            "sltu\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sltu\trd, rs, rt\nSet register rd to 1 if register rs is less than rt"
     },
@@ -324,7 +333,7 @@
         "prefix": "slti",
         "body":
         [
-            "\tslti\t\\$$1, \\$$2, $3"
+            "slti\t\\$$1, \\$$2, $3"
         ],
         "description": "slti\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
     },
@@ -333,7 +342,7 @@
         "prefix": "sltiu",
         "body":
         [
-            "\tsltiu\t\\$$1, \\$$2, $3"
+            "sltiu\t\\$$1, \\$$2, $3"
         ],
         "description": "sltiu\trt, rs, imm\nSet register rt to 1 if register rs is less than the sign-extended immediate,and to 0 otherwise"
     },
@@ -342,7 +351,7 @@
         "prefix": "seq",
         "body" :
         [
-            "\tseq\t\\$$1, \\$$2, \\$$3"
+            "seq\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "seq\trdest, rsrc1, rsrc2\nSet register rdest to 1 if register rsrc1 equals rsrc2,and to 0 otherwise"
     },           
@@ -351,7 +360,7 @@
         "prefix": "sge",
         "body":
         [
-            "\tsge\t\\$$1, \\$$2, \\$$3"
+            "sge\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sge\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
     },
@@ -360,7 +369,7 @@
         "prefix": "sgeu",
         "body":
         [
-            "\tsgeu\t\\$$1, \\$$2, \\$$3"
+            "sgeu\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sgeu\trdest, rsrc1, resrc2\nSet register rdest to 1 if regsiter rsrc1 is greater than or equal to rsrc2, and to 0 otherwise"
     },
@@ -369,7 +378,7 @@
         "prefix": "sgt",
         "body":
         [
-            "\tsgt\t\\$$1, \\$$2, \\$$3"
+            "sgt\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sgt\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
     },
@@ -378,7 +387,7 @@
         "prefix": "sgtu",
         "body":
         [
-            "\tsgtu\t\\$$1, \\$$2, \\$$3"
+            "sgtu\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sgtu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is greater than rsrc2, and to 0 otherwise"
     },
@@ -387,7 +396,7 @@
         "prefix": "sle",
         "body":
         [
-            "\tsle\t\\$$1, \\$$2, \\$$3"
+            "sle\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sle\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
     },
@@ -396,7 +405,7 @@
         "prefix": "sleu",
         "body":
         [
-            "\tsleu\t\\$$1, \\$$2, \\$$3"
+            "sleu\t\\$$1, \\$$2, \\$$3"
         ],
         "description": "sleu\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is less than or equal to rsrc2, and to 0 otherwise"
     },
@@ -405,7 +414,7 @@
         "prefix": "sne",
         "body":
         [
-            "\tsne\\$$1, \\$$2, \\$$3"
+            "sne\\$$1, \\$$2, \\$$3"
         ],
         "description": "sne\trdest, rsrc1, rsrc2\nSet register rdest to 1 if rsrc1 is not equal to rsrc2,and to 0 otherwise"
     },
@@ -414,7 +423,7 @@
         "prefix": "b",
         "body":
         [
-            "\tb\t$1"
+            "b\t$1"
         ],
         "description": "b\tlabel\nUnconditionally branch to the instruction at the label"
     },
@@ -423,7 +432,7 @@
         "prefix": "bclf",
         "body":
         [
-            "\tbclf\tcc, $1"
+            "bclf\tcc, $1"
         ],
         "description": "bclf\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is false"
     },
@@ -432,7 +441,7 @@
         "prefix": "bclt",
         "body":
         [
-            "\tbclt\tcc, $1"
+            "bclt\tcc, $1"
         ],
         "description": "bclt\tcc, label\nConditionally branch the number of instructions specified by the offset if the floating-point coprocessor's condition flag numbered cc is true"
     },
@@ -441,7 +450,7 @@
         "prefix": "beq",
         "body":
         [
-            "\tbeq\t\\$$1, \\$$2, $3"
+            "beq\t\\$$1, \\$$2, $3"
         ],
         "description": "beq\trs, rt ,label\nConditionally branch the number of instructions specified by the offset if register rs equals rt"
     },
@@ -450,7 +459,7 @@
         "prefix": "bgez",
         "body":
         [
-            "\tbgez\t\\$$1, $2"
+            "bgez\t\\$$1, $2"
         ],
         "description":"bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0"
     },
@@ -459,7 +468,7 @@
         "prefix": "bgezal",
         "body":
         [
-            "\tbgezal\t\\$$1, $2"
+            "bgezal\t\\$$1, $2"
         ],
         "description": "bgez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is greater than or equals to 0, Save the address of the next instruction in register 31($ra)"
     },
@@ -468,7 +477,7 @@
         "prefix": "bgtz",
         "body":
         [
-            "\tbgtz\t\\$$1, $2"
+            "bgtz\t\\$$1, $2"
         ],
         "description": "bgtz\trs, label\nConditionally branch the number of instruction specified by the offset if register rs is greater than 0"
     },
@@ -477,7 +486,7 @@
         "prefix": "blez",
         "body":
         [
-            "\tblez\t\\$$1, $2"
+            "blez\t\\$$1, $2"
         ],
         "description":"blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than or equals to 0"
     },
@@ -486,7 +495,7 @@
         "prefix": "bltzal",
         "body":
         [
-            "\tbltzal\t\\$$1, $2"
+            "bltzal\t\\$$1, $2"
         ],
         "description": "blez\trs,label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0, Save the address of the next instruction in register 31($ra)"
     },
@@ -495,7 +504,7 @@
         "prefix": "bltz",
         "body":
         [
-            "\tbltz\t\\$$1, $2"
+            "bltz\t\\$$1, $2"
         ],
         "description": "bltz\trs, label\nConditionally branch the number of instructions specified by the offset if register rs is less than 0"
     },
@@ -504,7 +513,7 @@
         "prefix": "bne",
         "body":
         [
-            "\tbne\t\\$$1, \\$$2, $3"
+            "bne\t\\$$1, \\$$2, $3"
         ],
         "description": "bne\trs, rt, label\nConditionally branch the number of instructions sprcified by the offset if register rs is not equal to rt"
     },
@@ -513,7 +522,7 @@
         "prefix": "beqz",
         "body":
         [
-            "\tbeqz\t\\$$1, $2"
+            "beqz\t\\$$1, $2"
         ],
         "description": "beqz\trsrc, label\nConditionally branch to the instruction at the label if rsrc equals 0"
     },
@@ -522,7 +531,7 @@
         "prefix":"bge",
         "body": 
         [
-            "\tbge\t\\$$1, \\$$2, $3"
+            "bge\t\\$$1, \\$$2, $3"
         ],
         "description": "bge\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
     },
@@ -531,7 +540,7 @@
         "prefix":"bgeu",
         "body": 
         [
-            "\tbgeu\t\\$$1, \\$$2, $3"
+            "bgeu\t\\$$1, \\$$2, $3"
         ],
         "description": "bgeu\trsrc1, rsrc2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than or equal to rsrc2"
     },
@@ -540,7 +549,7 @@
         "prefix":"bgt",
         "body":
         [
-            "\tbgt\\t\\$$1, \\$$2, $3"
+            "bgt\\t\\$$1, \\$$2, $3"
         ],
         "description": "bgt\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
     },
@@ -549,7 +558,7 @@
         "prefix": "bgtu",
         "body":
         [
-            "\tbgtu\\t\\$$1, \\$$2, $3"
+            "bgtu\\t\\$$1, \\$$2, $3"
         ],
         "description": "bgtu\trsrc1, src2, label\nConditionally branch to the instruction at the label if register rsrc1 is greater than src2"
     },
@@ -558,7 +567,7 @@
         "prefix": "ble",
         "body": 
         [
-            "\tble\t\\$$1, \\$$2, $3"
+            "ble\t\\$$1, \\$$2, $3"
         ],
         "description": "ble\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
     },
@@ -567,7 +576,7 @@
         "prefix": "bleu",
         "body": 
         [
-            "\tbleu\t\\$$1, \\$$2, $3"
+            "bleu\t\\$$1, \\$$2, $3"
         ],
         "description": "bleu\trsrc1, src2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than or equal to src2"
     },
@@ -576,7 +585,7 @@
         "prefix": "blt",
         "body": 
         [
-            "\tblt\t\\$$1, \\$$2, $3"
+            "blt\t\\$$1, \\$$2, $3"
         ],
         "description": "ble\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
     },
@@ -585,7 +594,7 @@
         "prefix": "bltu",
         "body":
         [
-            "\tbltu\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
+            "bltu\trsrc1, rsrc2, label\bConditionally branch to the instruction at the label if register rsrc1 is less than rsrc2"
         ]
     },
     "bnez":
@@ -593,7 +602,7 @@
         "prefix": "bnez",
         "body": 
         [
-            "\tbnez\trsrc, label"
+            "bnez\trsrc, label"
         ],
         "description": "Conditionally branch to the instruction at the label if register rsrc is not equal to 0"
     },
@@ -602,7 +611,7 @@
         "prefix": "j",
         "body": 
         [
-            "\tj\t$1"
+            "j\t$1"
         ],
         "description": "j\ttarget\nUncondition jump to the instruction at target"
     },
@@ -611,7 +620,7 @@
         "prefix": "jal",
         "body":
         [
-            "\tjal\t$1"
+            "jal\t$1"
         ],
         "description": "jal\ttarget\nUnconditionallt jump to the instruction at target,Save the address of next instruction in the register 31($ra)"
     },
@@ -620,7 +629,7 @@
         "prefix":"jalr",
         "body":
         [
-            "\tjalr\t\\$$1, \\$$2"
+            "jalr\t\\$$1, \\$$2"
         ],
         "description": "jalr\trs, rd\nUnconditionally jump to the instruction whose address is in register rs,Save the address of next instruction in register rd"
     },
@@ -629,7 +638,7 @@
         "prefix": "jr",
         "body": 
         [
-            "\tjr\t\\$$1"
+            "jr\t\\$$1"
         ],
         "description": "jr\trs\nUnconditionally jump to the instruction whose address is in register rs"
     },
@@ -651,7 +660,7 @@
         "prefix": "syscall",
         "body":
         [
-            "\tsyscall"
+            "syscall"
         ],
         "description": "syscall\nLoad syscall call code to regsiter 2($v0) and ararguments to register 4-7($a0-$a3),to use operating system-like services"
     },
@@ -660,7 +669,7 @@
         "prefix": "break",
         "body":
         [
-            "\tbreak\t$1"
+            "break\t$1"
         ],
         "description": "break\tcode\nCause exception code."
     },
@@ -669,7 +678,7 @@
         "prefix": "nop",
         "body":
         [
-            "\tnop"
+            "nop"
         ],
         "description": "Do nothing"
     }
